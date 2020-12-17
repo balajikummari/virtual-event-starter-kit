@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
+import { SITE_DESCRIPTION } from '@lib/constants';
 import cn from 'classnames';
-import styleUtils from './utils.module.css';
 import styles from './hero.module.css';
-import { BRAND_NAME, DATE, SITE_DESCRIPTION } from '@lib/constants';
+import styleUtils from './utils.module.css';
 
 export default function Hero() {
   return (
@@ -33,8 +33,8 @@ export default function Hero() {
         {SITE_DESCRIPTION}
       </h2>
       <h1 className={cn(styleUtils.appear, styleUtils['appear-third'], styles.hero)}>
-        The first {BRAND_NAME}
-        <br className={styleUtils['show-on-desktop']} /> global user conference
+        The Savvy Mechanic's
+        <br className={styleUtils['show-on-desktop']} /> global Tech conference
       </h1>
       <h2
         className={cn(
@@ -47,7 +47,7 @@ export default function Hero() {
         {SITE_DESCRIPTION}
       </h2>
       <div className={cn(styleUtils.appear, styleUtils['appear-fourth'], styles.info)}>
-        <p>{DATE}</p>
+        <p>In The Not Too Distant Future </p>
         <div className={styles['description-separator']} />
         <p>
           <strong>Online</strong>
